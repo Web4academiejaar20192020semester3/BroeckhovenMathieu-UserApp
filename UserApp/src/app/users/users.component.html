@@ -1,0 +1,9 @@
+<p>users works!</p>
+<ul>
+  <li *ngFor='let user of users' (click)="onSelect(user)">
+    <p>first name: {{user.firstName}}</p>
+    <p>last name: {{user.lastName}}</p>
+    <p>user ID: {{user.userId}}</p>
+    <p>status: {{user.status | lowercase}}</p>
+  </li>
+</ul>
